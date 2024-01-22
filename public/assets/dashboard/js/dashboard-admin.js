@@ -60,7 +60,7 @@ $(document).on('click', '#tombol-edit', function(e) {
 $(document).on('click', '#tombol-hapus', function(e) {
     let id = $(this).data('id');
 
-    if (confirm('Apakah Anda yakin ingin menghapus pengurus ini?')) {
+    if (confirm('Apakah Anda yakin ingin menghapus admin ini?')) {
         $.ajax({
             url: '/dashboard/admin/hapus_admin/' + id,
             type: 'DELETE',
